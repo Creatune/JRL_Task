@@ -1,0 +1,3 @@
+#include "JRLTask.h"
+
+CONTROLLER_CONSTRUCTOR("JRLTask", JRLTask)
