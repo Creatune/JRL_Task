@@ -8,15 +8,13 @@ set(PROJECT_DESCRIPTION "JRLTask")
 set(PROJECT_URL "")
 
 project(${PROJECT_NAME} CXX)
-
 # Check if the project is built inside mc_rtc
 if(NOT TARGET mc_rtc::mc_control)
   find_package(mc_rtc REQUIRED)
 endif()
-
+message(STATUS "mc_rtc include path: ${MC_RTC_INCLUDE_DIRS}")
 add_subdirectory(src)
 
 set(AROBASE "@")
 configure_file(etc/JRLTask.in.yaml "${CMAKE_CURRENT_BINARY_DIR}/etc/JRLTask.yaml")
 install(FILES "${CMAKE_CURRENT_BINARY_DIR}/etc/JRLTask.yaml" DESTINATION "${MC_CONTROLLER_RUNTIME_INSTALL_PREFIX}/etc")
-

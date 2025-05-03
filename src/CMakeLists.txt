@@ -18,3 +18,4 @@ add_controller(${PROJECT_NAME}_controller lib.cpp "")
 target_link_libraries(${PROJECT_NAME}_controller PUBLIC ${PROJECT_NAME})
 
 add_subdirectory(states)
+# mc_rtc_set_prefix(FSM_STATES mc_controller/fsm/states)

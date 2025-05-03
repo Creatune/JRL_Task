@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/vscode/superbuild/jrl_task/build/cmake_install.cmake",
+		"/home/vscode/superbuild/jrl_task/build/src/cmake_install.cmake",
+		"/home/vscode/superbuild/jrl_task/build/src/states/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,11 @@
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/etc/JRLTask.yaml
+/home/vscode/superbuild/install/relwithdebinfo/lib/libJRLTask.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask_controller.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask/states/JRLTask_Initial.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask/states/MoveLeftHand.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask/states/ReturnLeftHand.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask/states/MoveRightHand.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask/states/ReturnRightHand.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask/states/MoveBothHands.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask/states/ReturnBothHands.so
+/home/vscode/superbuild/install/relwithdebinfo/lib/mc_controller/JRLTask/states/data/states.json

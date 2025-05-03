@@ -2,10 +2,10 @@
 # If true, the FSM transitions are managed by an external tool
 Managed: false
 # If true and the FSM is self-managed, transitions should be triggered
-StepByStep: true
+StepByStep: false
 # Change idle behaviour, if true the state is kept until transition,
 # otherwise the FSM holds the last state until transition
-IdleKeepState: false
+IdleKeepState: true
 # Where to look for state libraries
 StatesLibraries:
 - "@MC_STATES_DEFAULT_RUNTIME_INSTALL_PREFIX@"
@@ -51,6 +51,11 @@ jvrc1:
 states: {}
 # Transitions map
 transitions:
-- [JRLTask_Initial, OK, JRLTask_Initial, Strict]
+  - [MoveLeftHand, OK, ReturnLeftHand, Strict]
+  - [ReturnLeftHand, OK, MoveRightHand, Strict]
+  - [MoveRightHand, OK, ReturnRightHand, Strict]
+  - [ReturnRightHand, OK, MoveBothHands, Strict]
+  - [MoveBothHands, OK, ReturnBothHands, Strict]
+  - [ReturnBothHands, OK, MoveLeftHand, Strict]
 # Initial state
-init: JRLTask_Initial
+init: MoveLeftHand
