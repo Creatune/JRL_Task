@@ -13,3 +13,6 @@
 7. This should show the robot (JVRC-1) running the controller.
 8. To cycle through states, click the "Start Next State" button. This is available once the current state executes fully.
 9. That is it! This is how you run the `JRLTask` controller.
+
+## Image of the Controller Running
+![image](https://github.com/user-attachments/assets/1446948d-b1df-45f1-a9ee-7e4102e867c6)
