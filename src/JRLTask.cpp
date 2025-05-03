@@ -3,6 +3,12 @@
 JRLTask::JRLTask(mc_rbdyn::RobotModulePtr rm, double dt, const mc_rtc::Configuration & config)
 	: mc_control::fsm::Controller(rm, dt, config)
 {
+	addContact({robot().name(), "ground", "LeftFoot", "AllGround"});
+	addContact({robot().name(), "ground", "RightFoot", "AllGround"});
+	solver().addConstraintSet(contactConstraint());
+	solver().addConstraintSet(*dynamicsConstraint);
+	solver().addConstraintSet(*kinematicsConstraint);
+	solver().addConstraintSet(*selfCollisionConstraint);
 	solver().addTask(postureTask);
 	mc_rtc::log::success("JRLTask init done ");
 }

@@ -4,7 +4,7 @@
 #include <mc_control/fsm/Controller.h>
 #include <mc_tasks/LookAtTask.h>
 #include <mc_tasks/TransformTask.h>
-
+#include <mc_control/fsm/Controller.h>
 #include "api.h"
 
 struct JRLTask_DLLAPI JRLTask : public mc_control::fsm::Controller
