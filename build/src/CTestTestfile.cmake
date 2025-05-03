@@ -1,7 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/vscode/superbuild/jrl_task/src
-# Build directory: /home/vscode/superbuild/jrl_task/build/src
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
-subdirs("states")
